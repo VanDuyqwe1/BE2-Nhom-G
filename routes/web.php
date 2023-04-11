@@ -13,3 +13,7 @@ Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout')
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('viewuser', [CustomAuthController::class, 'show']);
+Route::get('changeuser', [CustomAuthController::class, 'btnchageuser']);
+

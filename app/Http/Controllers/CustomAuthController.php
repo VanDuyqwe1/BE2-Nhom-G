@@ -75,7 +75,7 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if(Auth::check()){
-            return view('dashboard');
+            return view('changeuser');
         }
   
         return redirect("login")->withSuccess('You are not allowed to access');
@@ -87,4 +87,14 @@ class CustomAuthController extends Controller
   
         return Redirect('login');
     }
+
+
+    public function show()
+    {
+
+        $users = User::all();
+        $user = Auth::user();
+        return view('viewuser', [ 'nguoidung' => $user, 'users' => $users ]);
+        
+    }  
 }
