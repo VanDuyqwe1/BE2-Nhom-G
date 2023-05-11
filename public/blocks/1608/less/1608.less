@@ -1,0 +1,207 @@
+.type-1605{
+    margin-top: 50px; // using test css
+    margin-bottom: 50px; // using test css
+    .content{
+        width: 100%;
+        height: 465px;
+        background-image: url(../images/banner_1920x1000.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        color: #fff;
+        .container{
+            .row{
+                .col-sm-12{
+                    .context{
+                        width: 100%;
+                        max-width: 500px;
+                        height: 191px;
+                        position: absolute;
+                        top: 137px;
+                        a{
+                            margin-top: 20px;
+                            display: block;
+                            background-color: #fab502;
+                            text-decoration: none;
+                            width: 255px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+
+                        }
+                        a:hover{
+                            animation: zoom 1.2s infinite;
+                        }
+
+                        #clockdiv{
+                            padding: 0;
+                            .textDiv_Days{
+                                display: inline-block;
+                                text-align: center;
+                                width: 61px !important;
+                                height: 61px;
+                                color: #000;
+                                background: #fff;
+                                padding: 10px;
+
+                                .days{
+
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    display: block;
+                                }
+                                .text{
+                                    font-size: 10px;
+                                    text-transform: uppercase;
+                                    display: block;
+                                }
+                            }
+                            .textDiv_Hours{
+
+                                display: inline-block;
+                                text-align: center;
+                                width: 61px !important;
+                                height: 61px;
+                                color: #000;
+                                background: #fff;
+                                padding: 10px;
+
+                                .hours{
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    display: block;
+                                }
+                                .text{
+                                    font-size: 10px;
+                                    text-transform: uppercase;
+                                    display: block;
+                                }
+                            }
+                            .textDiv_Minutes{
+                                display: inline-block;
+                                text-align: center;
+                                width: 61px !important;
+                                height: 61px;
+                                color: #000;
+                                background: #fff;
+                                padding: 10px;
+
+                                .minutes{
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    display: block;
+                                }
+                                .text{
+                                    font-size: 10px;
+                                    text-transform: uppercase;
+                                    display: block;
+                                }
+                            }
+                            .textDiv_Seconds{
+                                display: inline-block;
+                                width: 61px !important;
+                                height: 61px;
+                                color: #000;
+                                background: #fff;
+                                padding: 10px;
+
+                                text-align: center;
+                                .seconds{
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    display: block;
+                                }
+                                .text{
+                                    text-transform: uppercase;
+                                    font-size: 10px;
+                                    display: block;
+                                }
+                            }
+                        }
+
+
+                        .contextcontent{
+
+                            h2{
+                                padding-top: 10px;
+                                color: #fff;
+                                letter-spacing: 7px;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                line-height: 36px;
+                                margin-top: 10px;
+                                margin-bottom: 8px;
+                                position: relative;
+                            }
+                            h2:before{
+                                content: "";
+                                border-top: 5px solid #fab502;
+                                position: absolute;
+                                top: -10px;
+                                left: 0;
+                                right: auto;
+                                width: 50px;
+                                transform: none;
+
+                            }
+                            p{
+                                max-width: 450px;
+                                color: #fff;
+                                line-height: 23px;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+    }
+    @media (max-width: 414px){
+        .context{
+            .contextcontent{
+                p{
+                    width: 360px;
+                }
+            }
+        }
+    }
+
+}
+@keyframes zoom
+{
+    0%{
+        transform: scale(0.9);
+
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(0.9);
+
+    }
+}
